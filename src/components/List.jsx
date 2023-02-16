@@ -20,10 +20,8 @@ const List = (props) => {
                     <input type="text" value={input.name} onChange={handleChange} />
                     <input type="submit" value="Add"/>
                 </form>
-
             </div>
         )
     }
-
 
 export default List;

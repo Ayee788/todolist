@@ -4,7 +4,7 @@ import List from './components/List';
 import Task from './components/Task';
 
 function App() {
-const [list, setList] = useState([]);
+  const [list, setList] = useState([]);
   return (
     <div className = "App">
       <List list = {list} setList = {setList}/>

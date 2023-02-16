@@ -11,15 +11,11 @@
             tasks[e.target.value].isComplete = true;
             setList(tasks);
         }
+        
     return (
         <div>
         {list.map((task, index) => {
-            const taskStyle = {
-                textDecoration: task.isComplete ? 'line-through' : 'none'
-            }
-            if (task.isComplete) {
-                taskStyle.textDecoration = 'line-through';
-            }
+            
             return (
                 <div key={index}>
                     <p style={{textDecoration: task.isComplete ? 'line-through' : 'none'}}>{task.name}</p>
